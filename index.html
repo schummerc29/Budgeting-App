@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Budgeting App</title>
+</head>
+
+<body>
+
+    <form id="budget">
+        <input id="budget-bills" placeholder="Budget for bills..."></input><br>
+        <input id="budget-food" placeholder="Budget for food..."></input><br>
+        <input id="budget-fun" placeholder="Budget for fun..."></input><br>
+        <input id="budget-other" placeholder="Budget for other..."></input><br>
+
+        <button id="budget-submit">Confirm totals</button>
+    </form>
+
+    <div class="category">
+        <h2 class="title">Expenses</h2>
+        <ul id="bills">
+
+        </ul>
+        <button id="add-bill">Add new expense</button>
+        <form id="bill-entry" class="add">
+
+            <label for="type">Expense Type:</label>
+            <select name="expenses" id="type">
+                <option value="Bills">Bills</option>
+                <option value="Food">Food</option>
+                <option value="Fun">Fun</option>
+                <option value="Other">Other</option>
+            </select><br>
+
+
+
+            <input id="bills-text" placeholder="Add new expense..."></input><br>
+            <input id="bills-amount" placeholder="What is the cost?"></input><br>
+            <button id="bills-submit">Add Expense</button>
+
+        </form>
+
+    </div>
+
+    <div class="breakdown">
+        <h2 class="budget-breakdown">Budget Breakdown:</h2>
+        <ul id="budget-lists">
+            <li id="bills-entered"></li>
+            <li id="food-entered"></li>
+            <li id="fun-entered"></li>
+            <li id="other-entered"></li>
+            <li id="total-entered"></li>
+        </ul>
+
+    </div>
+
+
+    <div class="calculate">
+        <h2 class="expenses-breakdown">Expenses Breakdown:</h2>
+        <ul>
+            <li id="bills-expenses"></li>
+            <li id="food-expenses"></li>
+            <li id="fun-expenses"></li>
+            <li id="other-expenses"></li>
+            <li id="total-expenses"></li>
+        </ul>
+    </div>
+    <script src="/jquery-1.11.0.js"></script>
+    <script src="/script.js"></script>
+</body>
+
+</html>
